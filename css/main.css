@@ -119,6 +119,17 @@ p {
 #signup-form input[name=email]input:-moz-placeholder { color:#eee; }
 #signup-form input[name=email]input:placeholder { color:#eee; }
 
+#signup-form input[name=email]:focus::-webkit-input-placeholder { color:transparent; }
+#signup-form input[name=email]:focus::-moz-placeholder { color:transparent; } /* firefox 19+ */
+#signup-form input[name=email]:focus:-ms-input-placeholder { color:transparent; } /* ie */
+#signup-form input[name=email]:focusinput:-moz-placeholder { color:transparent; }
+#signup-form input[name=email]:focusinput:placeholder { color:transparent; }
+
+#signup-form input[name=email]:focus {
+	outline: none;
+	border-color: #eee;
+}
+
 #signup-form input[type=submit] {
 	display: block;
 	margin: 20px auto;
@@ -128,6 +139,13 @@ p {
 	background: #726eaf;
 	color: #fff;
 	border-radius: 30px;
+	box-shadow: 1px 1px #514b87;
+}
+
+#signup-form input[type=submit]:hover {
+	position: relative;
+	top: 1px;
+	box-shadow: 0 0;
 }
 
 
