@@ -11,6 +11,10 @@
 		<meta name="viewport" content="width=device-width">
 
 		<link rel="stylesheet" href="css/normalize.min.css">
+	
+		<link href='http://fonts.googleapis.com/css?family=Engagement' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cardo:400,700' rel='stylesheet' type='text/css'>
+
 		<link rel="stylesheet" href="css/main.css">
 
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -23,8 +27,12 @@
 		<main id="main" class="landing">
 			<h1>Plumer</h1>
 			<p>Show your best self, analytics for dating profiles.</p>
-			<div class="sendgrid-subscription-widget signup" data-token="rEuNXNJNJal4iy1xnnyIvzNRmhIlYHrsoon6g5Kjsm1oSSLUEc2aL127V%2BGB5%2FtQ"></div>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://s3.amazonaws.com/subscription-cdn/0.1/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'sendgrid-subscription-widget-js');</script>
+
+			<div id="beta-signup">
+				<h2>Sign Up for Beta Access</h2>
+				<div class="sendgrid-subscription-widget" id="signup-form" data-token="rEuNXNJNJal4iy1xnnyIvzNRmhIlYHrsoon6g5Kjsm1oSSLUEc2aL127V%2BGB5%2FtQ" data-message-unprocessed="Unfortunately, we were unable to process your signup. Please try again." data-message-success="Thanks for signing up!" data-submit-text="Signup"></div>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://s3.amazonaws.com/subscription-cdn/0.1/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'sendgrid-subscription-widget-js');</script>
+			</div>
 		</main>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>

@@ -60,13 +60,85 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+* {
+	font-family: 'Cardo', serif;
+}
+
+body {
+	background: #9D9CDE;
+	color: #333;
+}
+
+#main {
+	max-width: 600px;
+	margin: 10% auto;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Engagement', cursive;
+	font-size: 10em;
+	line-height: 1;
+	margin: 0;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+p {
+	margin: 20px 0;
+}
+
+#signup-form {
+	margin-top: 10px;
+}
+
+#signup-form label {
+	display: block;
+}
+
+#signup-form label span {
+	display: none;
+}
+
+#signup-form input[name=email] {
+	border: none;
+	border-bottom: 1px solid #333;
+	padding: 6px;
+	text-align: center;
+	background: none;
+	color: #333;
+	font-family: 'Cardo', serif;
+	width: 50%;
+}
+
+#signup-form input[name=email]::-webkit-input-placeholder { color:#eee; }
+#signup-form input[name=email]::-moz-placeholder { color:#eee; } /* firefox 19+ */
+#signup-form input[name=email]:-ms-input-placeholder { color:#eee; } /* ie */
+#signup-form input[name=email]input:-moz-placeholder { color:#eee; }
+#signup-form input[name=email]input:placeholder { color:#eee; }
+
+#signup-form input[type=submit] {
+	display: block;
+	margin: 20px auto;
+	font-family: 'Cardo', serif;
+	border: none;
+	padding: 10px 50px;
+	background: #726eaf;
+	color: #fff;
+	border-radius: 30px;
+}
 
 
+body.subscribed #signup-form input {
+	display: none;
+}
 
 
-
-
-
+#signup-form.sendgrid-subscription-widget div.response {
+	color: #eee;
+}
 
 
 
