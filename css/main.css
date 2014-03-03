@@ -159,6 +159,16 @@ body.subscribed #signup-form input {
 }
 
 
+body.rockin {
+	background-image : url(../img/a-b-image.gif);
+	background-size : cover;
+}
+
+body.rockin * {
+	color: #fff;
+	text-shadow: 1px 1px 20px #333;
+}
+
 
 
 
